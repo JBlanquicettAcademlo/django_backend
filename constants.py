@@ -1,0 +1,1 @@
+ENDPOINT_FILTER_BY_NAME = "https://ms-companies-dev.urbvan.com/v4/companies/filter_by_name/"
