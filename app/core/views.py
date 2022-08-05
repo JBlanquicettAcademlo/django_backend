@@ -9,7 +9,6 @@ class StatusView(APIView):
    def get(self, request):
        return Response({'result':'server is running and OK'}, status=status.HTTP_200_OK)
 
-
 class FileUploadView(APIView):
     
     serializer_class = UploadSerializer
