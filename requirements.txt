@@ -30,3 +30,5 @@ celery==4.4.1
 django-celery-beat==2.0.0
 django-celery-results==1.2.0
 flower==0.9.5
+
+pytest-django
