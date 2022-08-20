@@ -1,40 +1,13 @@
-
-
-from rest_framework import status
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.viewsets import ModelViewSet
+
 
 import datetime
-from .serializers import UserSerializer
-from .models import User
-from .tasks import unsync_notify
+from ..serializers import UserSerializer
+from ..models import User
 
 import jwt
-
-class StatusView(APIView):
-  
-   def get(self, request):
-       return Response({'result':'server is running and OK'}, status=status.HTTP_200_OK)
-
-class UserViewSet(ModelViewSet):
-    
-    serializer_class = UserSerializer
-
-    def get_queryset(self):
-        return User.objects.all()
-
-    # def retrieve(self, request, *args, **kwargs):
-
-    #     params = kwargs
-    #     name = params['pk']
-    #     print(params)
-
-    #     users = User.objects.filter(name__icontains=name)
-    #     serializer = UserSerializer(users, many=True)
-
-    #     return Response(serializer.data)
 
 
 class RegisterView(APIView):
@@ -46,7 +19,7 @@ class RegisterView(APIView):
         serializer.save()
 
         name = request.data['name']
-        unsync_notify.apply_async(args=[name])
+        # unsync_notify.apply_async(args=[name])
 
         return Response(serializer.data)
 
