@@ -1,34 +1,55 @@
-'''This file have the purpose of ...'''
+# is_good = True
+# is_bad = False
 
-# Boolean Type (True or False)
-is_good = True
-is_bad = False
+# print(type(is_good), type(is_bad))
 
-# None Type (no value)
-is_nullable = None
+# is_nullable = None
 
-# Text Type (str)
-string = "I'm a string"
+# print(type(is_nullable))
 
-# Numeric Types (int, float)
-value1 = 1
-value2 = 1.0
+# string = 'This is a string'
 
-# Sequence Types (lists, tuples, range)
-custom_list = [1, 2, 3]
-custom_tuple = (1, 2, 3)
-r = range(1, 10)
-for i in r:
-    print(i)
+# print(type(string))
 
-# Mapping Type (dictionaries)
+# fl = 4.5
+# i = int(4.6)
 
-payload = {
-    "name": "John",
-    "age": 30,
-    "is_admin": True
-}
+# print(fl, i)
+# print(type(fl), type(i))
 
-# Explicit vs Implicit
-x = 5
-y = int(5)
+# custom_list = [1, 2, 3]
+# custom_tuple = 'admin','user_by_company'
+# print(custom_tuple[1])
+
+# print(custom_list, type(custom_list))
+# print(custom_tuple, type(custom_tuple))
+
+# custom_list.append(4)
+# print(custom_list, type(custom_list))
+
+# string = 'balbakjj'
+
+# r = range (3, len(string))
+
+# for i in string:
+#     print(i)
+
+# payload = {'name':'Jorge', 'lname':'Blanquicett'}
+# print(payload['name'], payload['lname'])
+# print(payload, type(payload))
+
+# x = 5
+# y = int(5)
+# y = 'r'
+
+# print(x, type(x))
+# print(y, type(y))
+
+# s = {'A', 'B', 'C', 'A', 'B'}
+# print(s, type(s))
+
+# s = {1, 2, 3, 4,3,2, 5}
+# print(s, type(s))
+
+# for i in s:
+#     print(i)

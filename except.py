@@ -1,18 +1,13 @@
-'''This file have the purpose of ...'''
+# try:
+#     print(1/1)
+# except ZeroDivisionError:
+#     print('No se puede dividir entre cero')
+# else:
+#     print('no se ha generado nda, todo cool')
+# finally:
+#     print('siempre..')
 
-# Jerarquía de excepciones. https://dotnettutorials.net/wp-content/uploads/2020/07/word-image-181.png
-# try
-# except
-# else
-# finally
-# raise
+class AcademloException(BaseException):
+    ...
 
-try:
-    print(1/0)
-except ZeroDivisionError:
-    print('No se puede dividir entre cero.')
-else:
-    print('No se ha generado una excepción.')
-finally:
-    print('Se ejecuta siempre.')
-
+raise AcademloException('Students cannot pass python course less than 70%')
