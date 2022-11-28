@@ -1,22 +1,21 @@
-import socket
 
+
+import socket
 s = socket.socket()
 
-print("Socket created")
+print('socket creado')
 
 port = 9000
 
 s.bind(('', port))
 s.listen(5)
 
-response = {'status': 'success', 'message': 'Server is running'}
+response = {'status':'success'}
 
 while True:
 
     c, addr = s.accept()
-    print("Got connection from", addr)
-
-    c.send(f'{response}'.encode())
+    print('got connection ', addr)
     c.close()
-    print("Closed connection")
+    print('socket terminado')
     break
