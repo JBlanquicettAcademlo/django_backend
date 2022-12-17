@@ -7,7 +7,7 @@ from app.celery import app
 @app.task(name="unsync_notify")
 def unsync_notify(name):
     
-    web_hook_url = 'https://hooks.slack.com/services/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'
+    web_hook_url = 'https://hooks.slack.com/services/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'
 
     slack_msg = {
 	"fallback": "....",
